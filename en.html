@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Diamond ReTool - Regenerating Value</title>
+    <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
     
@@ -27,7 +28,7 @@
       },
       "vatID": "IT13437300018",
       "email": "info@diamondretool.it",
-      "description": "Professional service for diamond tool regeneration."
+      "description": "Specialized service in diamond tools and rollers regeneration for modern industry."
     }
     </script>
 
@@ -46,15 +47,16 @@
     <style>
         .image-mask { width: 100%; height: 100%; object-fit: cover; object-position: center; }
         .lang-active { color: #2563eb; font-weight: 800; border-bottom: 2px solid #2563eb; }
+        /* Pixel-perfect CTA Box consistency IT/EN */
         .cta-header-box { width: 120px; height: 50px; }
         @media (min-width: 640px) { .cta-header-box { width: 160px; height: 65px; } }
         @media (min-width: 768px) { .cta-header-box { width: 230px; height: 80px; } }
     </style>
 </head>
-<body class="font-sans bg-brand-light text-brand-dark antialiased selection:bg-brand-accent selection:text-white relative">
+<body class="font-sans bg-brand-light text-brand-dark antialiased selection:bg-brand-accent selection:text-white relative text-left">
 
     <!-- WhatsApp Button -->
-    <a href="https://wa.me/393515567533?text=Good%20morning,%20I%20would%20like%20information." target="_blank" class="fixed bottom-6 right-6 z-[60] bg-brand-whatsapp text-white p-4 rounded-full shadow-2xl hover:scale-110 transition-transform duration-300 flex items-center justify-center group">
+    <a href="https://wa.me/393515567533?text=Good%20morning,%20I%20would%20like%20information." target="_blank" class="fixed bottom-6 right-6 z-[60] bg-brand-whatsapp text-white p-4 rounded-full shadow-2xl hover:scale-110 transition-transform duration-300 flex items-center justify-center group" aria-label="Contact us on WhatsApp">
         <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
     </a>
 
@@ -66,11 +68,10 @@
                     <img src="logo.png" alt="Diamond ReTool" class="h-28 sm:h-32 md:h-36 lg:h-40 object-contain py-2">
                 </div>
                 <div class="flex space-x-4 text-xs md:text-sm font-bold uppercase tracking-widest">
-                    <a href="index.html" class="text-slate-400 hover:text-brand-dark px-2 pb-1 transition">IT</a>
-                    <a href="en.html" class="lang-active px-2 pb-1">EN</a>
+                    <a href="index.html" class="text-slate-400 hover:text-brand-dark px-2 pb-1 transition-all">IT</a>
+                    <a href="en.html" class="lang-active px-2 pb-1 transition-all">EN</a>
                 </div>
                 <div class="flex-shrink-0">
-                    <!-- CTA linked to the request form ID -->
                     <a href="#richiesta-info" class="cta-header-box bg-brand-accent text-white rounded-3xl font-bold hover:bg-blue-700 transition shadow-lg text-[10px] sm:text-xs md:text-lg flex flex-col items-center justify-center leading-tight text-center uppercase px-2">
                         <span>Request</span>
                         <span>information</span>
@@ -85,10 +86,10 @@
         <div class="absolute inset-0">
             <img src="image1.jpg" alt="Diamond ReTool Hero" class="image-mask opacity-60">
         </div>
-        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 w-full text-left">
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 w-full">
             <div class="min-h-[180px] sm:min-h-[220px] lg:min-h-[300px] flex flex-col justify-start">
                 <h1 class="text-5xl md:text-7xl lg:text-8xl font-extrabold leading-tight mb-6 drop-shadow-2xl">Regenerating value.<br><span class="text-blue-400">Reducing costs.</span></h1>
-                <p class="text-xl md:text-3xl font-light text-slate-100 border-l-8 border-brand-accent pl-6 max-w-2xl drop-shadow-lg">A diamond is forever. So are your tools.</p>
+                <p class="text-xl md:text-3xl font-light text-slate-100 border-l-8 border-brand-accent pl-6 max-w-2xl drop-shadow-lg text-left">A diamond is forever. So are your tools.</p>
             </div>
         </div>
     </header>
@@ -105,7 +106,7 @@
                     </div>
                     <div class="bg-slate-50 p-10 rounded-[3rem] border border-slate-100 shadow-sm">
                         <h2 class="text-3xl font-extrabold mb-6 text-brand-dark italic text-xl">Current context</h2>
-                        <p class="text-brand-metal text-lg leading-relaxed text-left">Optimizing resources and reducing waste is no longer an option, but a strategic necessity for every modern company.</p>
+                        <p class="text-brand-metal text-lg leading-relaxed">Optimizing resources and reducing waste is no longer an option, but a strategic necessity for every modern company.</p>
                     </div>
                 </div>
                 <div class="relative min-h-[400px] lg:h-auto rounded-[3rem] overflow-hidden shadow-2xl bg-slate-200 lg:sticky lg:top-48">
@@ -115,9 +116,41 @@
         </div>
     </section>
 
-    <!-- Contacts section -->
-    <section class="pt-24 pb-12 bg-slate-900 text-white border-t border-slate-800">
+    <!-- Our Vision -->
+    <section class="py-28 bg-slate-900 text-white text-center px-4">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-brand-accent font-bold uppercase tracking-[0.3em] mb-8">Our vision</h2>
+            <p class="text-4xl md:text-6xl font-light leading-tight mb-12 italic text-center">“A diamond is forever.”</p>
+            <div class="w-32 h-1.5 bg-brand-accent mx-auto mb-12 text-center"></div>
+            <p class="text-2xl md:text-3xl text-slate-300 font-light max-w-3xl mx-auto leading-relaxed text-center">
+                It is precisely from this principle that the vision of Diamond ReTool is born. If a diamond is forever, then even the tools that use it can continue to generate value beyond their apparent life cycle.
+            </p>
+        </div>
+    </section>
+
+    <!-- Technology (image3) -->
+    <section class="py-24 bg-white text-left">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                <div class="order-2 lg:order-1 relative h-[500px] lg:h-[600px] rounded-[3rem] overflow-hidden shadow-xl bg-slate-200">
+                    <img src="image3.jpg" alt="Technical Detail" class="image-mask">
+                </div>
+                <div class="order-1 lg:order-2 space-y-12 min-h-[450px] flex flex-col justify-center">
+                    <h2 class="text-4xl font-extrabold mb-8 text-brand-dark">Technology and experience:<br><span class="text-brand-accent text-3xl">a fundamental balance</span></h2>
+                    <div class="text-brand-metal text-xl space-y-6">
+                        <p>Production processes have undergone a significant evolution over the years, thanks to the introduction of increasingly advanced technologies.</p>
+                        <div class="bg-blue-50 p-8 rounded-3xl border-l-8 border-brand-accent text-brand-dark font-medium italic text-2xl shadow-inner">
+                            Sight, hearing, and technical sensitivity represent fundamental tools that still play a decisive role today.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacts section -->
+    <section id="contatti" class="pt-24 pb-12 bg-slate-900 text-white border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center lg:text-left">
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-20 items-start">
                 <div class="space-y-12">
                     <div class="text-center lg:text-left min-h-[200px]">
@@ -193,11 +226,13 @@
                 if (response.ok) {
                     status.innerHTML = "Thank you! Your request has been sent.";
                     status.classList.add("bg-green-100", "text-green-800");
+                    status.classList.remove("bg-red-100", "text-red-800");
                     form.reset();
                     button.style.display = "none";
                 } else {
                     status.innerHTML = "Error during submission. Please try again.";
                     status.classList.add("bg-red-100", "text-red-800");
+                    status.classList.remove("bg-green-100", "text-green-800");
                     button.disabled = false;
                     button.innerHTML = "Send Request";
                 }
