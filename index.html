@@ -121,7 +121,7 @@
     <section class="py-24 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-stretch">
-                <div class="space-y-12 py-4 flex flex-col justify-center min-h-[550px] lg:min-h-[650px] text-left text-left">
+                <div class="space-y-12 py-4 flex flex-col justify-center min-h-[550px] lg:min-h-[650px] text-left">
                     <div>
                         <h2 class="text-4xl font-extrabold mb-8 text-brand-dark flex items-center text-left">
                             <span class="w-10 h-1 bg-brand-accent mr-4"></span>Chi siamo
@@ -156,7 +156,7 @@
                             Fermarsi un attimo può fare la differenza. <strong class="text-brand-accent underline decoration-white decoration-4 underline-offset-8">Riduci i costi e valorizza le tue risorse.</strong>
                         </p>
                     </div>
-                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 text-center text-center">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 text-center">
                         <div class="p-6 bg-slate-800/50 rounded-2xl border border-slate-700"><p class="text-xs font-bold text-brand-accent mb-2">Responsabile</p><p class="text-white font-bold text-xl">Mauro Lucarelli</p></div>
                         <div class="p-6 bg-slate-800/50 rounded-2xl border border-slate-700"><p class="text-xs font-bold text-brand-accent mb-2">Telefono</p><a href="tel:+393515567533" class="text-white font-bold text-xl hover:text-brand-accent transition">+39 351 5567533</a></div>
                         <div class="p-6 bg-slate-800/50 rounded-2xl border border-slate-700"><p class="text-xs font-bold text-brand-accent mb-2">Email</p><a href="mailto:info@diamondretool.it" class="text-white font-bold text-lg hover:text-brand-accent transition">info@diamondretool.it</a></div>
@@ -171,6 +171,8 @@
                         <input type="email" name="email" required class="w-full px-6 py-5 rounded-2xl bg-slate-50 border-2 border-slate-100 text-brand-dark text-lg" placeholder="Email">
                         <textarea name="message" rows="5" required class="w-full px-6 py-5 rounded-2xl bg-slate-50 border-2 border-slate-100 text-brand-dark text-lg" placeholder="Messaggio"></textarea>
                         <button type="submit" id="submit-button" class="w-full bg-brand-dark text-white font-black py-6 rounded-2xl hover:bg-brand-accent transition shadow-xl text-xl uppercase tracking-widest">Invia Richiesta</button>
+                        <!-- Div per lo stato dell'invio -->
+                        <div id="form-status" class="hidden mt-6 p-4 rounded-xl text-center font-bold"></div>
                     </form>
                 </div>
             </div>
@@ -182,16 +184,58 @@
         <div class="max-w-7xl mx-auto px-4 text-center">
             <div class="flex flex-col items-center space-y-16">
                 <img src="logo.png" alt="Diamond ReTool" class="h-48 sm:h-64 md:h-72 lg:h-80 mx-auto object-contain">
-                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12 w-full pt-16 border-t border-slate-100 text-center text-center text-center text-center">
-                    <div><p class="text-xs uppercase font-black text-slate-400 mb-2">Sede Legale</p><p class="text-brand-accent font-bold text-lg">Strada San Mauro 234/16<br>Torino (TO)</p></div>
-                    <div><p class="text-xs uppercase font-black text-slate-400 mb-2">PEC</p><p class="text-brand-accent font-bold text-lg"><a href="mailto:lucarelli.m@pec.it">lucarelli.m@pec.it</a></p></div>
-                    <div><p class="text-xs uppercase font-black text-slate-400 mb-2">Contatti</p><p class="text-brand-accent font-bold text-lg"><a href="mailto:info@diamondretool.it">info@diamondretool.it</a><br><a href="tel:+393515567533">+39 351 5567533</a></p></div>
-                    <div><p class="text-xs uppercase font-black text-slate-400 mb-2">Partita IVA</p><p class="text-brand-accent font-black text-xl tracking-widest">13437300018</p></div>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12 w-full pt-16 border-t border-slate-100 text-center">
+                    <div><p class="text-xs uppercase font-black text-slate-400 mb-2">Sede Legale</p><p class="text-brand-accent font-bold text-lg text-center">Strada San Mauro 234/16<br>Torino (TO)</p></div>
+                    <div><p class="text-xs uppercase font-black text-slate-400 mb-2 text-center">PEC</p><p class="text-brand-accent font-bold text-lg text-center"><a href="mailto:lucarelli.m@pec.it">lucarelli.m@pec.it</a></p></div>
+                    <div><p class="text-xs uppercase font-black text-slate-400 mb-2 text-center">Contatti</p><p class="text-brand-accent font-bold text-lg text-center"><a href="mailto:info@diamondretool.it">info@diamondretool.it</a><br><a href="tel:+393515567533">+39 351 5567533</a></p></div>
+                    <div><p class="text-xs uppercase font-black text-slate-400 mb-2 text-center">Partita IVA</p><p class="text-brand-accent font-black text-xl tracking-widest text-center">13437300018</p></div>
                 </div>
                 <div class="pt-12 text-slate-300 text-xs font-bold uppercase tracking-[0.4em] text-center">&copy; 2026 Diamond ReTool. Precisione e Durata nel tempo.</div>
             </div>
         </div>
     </footer>
 
+    <script>
+        const form = document.getElementById("contact-form");
+        const status = document.getElementById("form-status");
+        const button = document.getElementById("submit-button");
+
+        async function handleSubmit(event) {
+            event.preventDefault();
+            button.disabled = true;
+            button.innerHTML = "ELABORAZIONE...";
+            const data = new FormData(event.target);
+            fetch(event.target.action, {
+                method: form.method,
+                body: data,
+                headers: {
+                    'Accept': 'application/json'
+                }
+            })
+            .then(response => {
+                status.classList.remove("hidden");
+                if (response.ok) {
+                    status.innerHTML = "Grazie! La tua richiesta è stata inviata correttamente.";
+                    status.classList.add("bg-green-100", "text-green-800");
+                    status.classList.remove("bg-red-100", "text-red-800");
+                    form.reset();
+                    button.style.display = "none";
+                } else {
+                    status.innerHTML = "Si è verificato un errore durante l'invio. Riprova più tardi.";
+                    status.classList.add("bg-red-100", "text-red-800");
+                    status.classList.remove("bg-green-100", "text-green-800");
+                    button.disabled = false;
+                    button.innerHTML = "Invia Richiesta";
+                }
+            }).catch(() => {
+                status.classList.remove("hidden");
+                status.innerHTML = "Si è verificato un errore di rete. Controlla la tua connessione.";
+                status.classList.add("bg-red-100", "text-red-800");
+                button.disabled = false;
+                button.innerHTML = "Invia Richiesta";
+            });
+        }
+        form.addEventListener("submit", handleSubmit);
+    </script>
 </body>
 </html>
