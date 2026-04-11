@@ -78,6 +78,7 @@
     <nav class="bg-white shadow-md sticky top-0 z-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between h-32 md:h-44 items-center gap-4">
+                <!-- LOGO -->
                 <div class="flex items-center flex-shrink-0">
                     <img src="logo.png" alt="Diamond ReTool" class="h-28 sm:h-32 md:h-36 lg:h-40 object-contain py-2">
                 </div>
@@ -131,7 +132,7 @@
                             <p>The skills acquired over time represent a technical and human heritage of great value.</p>
                         </div>
                     </div>
-                    <div class="bg-slate-50 p-10 rounded-[3rem] border border-slate-100 shadow-sm">
+                    <div class="bg-slate-50 p-10 rounded-[3rem] border border-slate-100 shadow-sm text-left">
                         <h2 class="text-3xl font-extrabold mb-6 text-brand-dark italic text-xl">Current context</h2>
                         <div class="text-brand-metal leading-relaxed space-y-4 text-lg">
                             <p>Rising costs and shortage of qualified personnel. <span class="text-brand-dark font-bold underline decoration-brand-accent decoration-2 text-xl">Optimizing resources is no longer an option, but a strategic necessity.</span></p>
@@ -157,10 +158,10 @@
                         </p>
                     </div>
                     <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 text-center text-center">
-                        <div class="p-6 bg-slate-800/50 rounded-2xl border border-slate-700"><p class="text-xs font-bold text-brand-accent mb-2 uppercase">Manager</p><p class="text-white font-bold text-xl">Mauro Lucarelli</p></div>
-                        <div class="p-6 bg-slate-800/50 rounded-2xl border border-slate-700"><p class="text-xs font-bold text-brand-accent mb-2 uppercase">Phone</p><a href="tel:+393515567533" class="text-white font-bold text-xl hover:text-brand-accent transition">+39 351 5567533</a></div>
-                        <div class="p-6 bg-slate-800/50 rounded-2xl border border-slate-700"><p class="text-xs font-bold text-brand-accent mb-2 uppercase">Email</p><a href="mailto:info@diamondretool.it" class="text-white font-bold text-lg hover:text-brand-accent transition">info@diamondretool.it</a></div>
-                        <div class="p-6 bg-slate-800/50 rounded-2xl border border-slate-700"><p class="text-xs font-bold text-brand-accent mb-2 uppercase">PEC</p><a href="mailto:lucarelli.m@pec.it" class="text-white font-bold text-lg hover:text-brand-accent transition">lucarelli.m@pec.it</a></div>
+                        <div class="p-6 bg-slate-800/50 rounded-2xl border border-slate-700 transition"><p class="text-xs font-bold text-brand-accent mb-2 uppercase">Manager</p><p class="text-white font-bold text-xl">Mauro Lucarelli</p></div>
+                        <div class="p-6 bg-slate-800/50 rounded-2xl border border-slate-700 transition"><p class="text-xs font-bold text-brand-accent mb-2 uppercase">Phone</p><a href="tel:+393515567533" class="text-white font-bold text-xl hover:text-brand-accent transition">+39 351 5567533</a></div>
+                        <div class="p-6 bg-slate-800/50 rounded-2xl border border-slate-700 transition"><p class="text-xs font-bold text-brand-accent mb-2 uppercase">Email</p><a href="mailto:info@diamondretool.it" class="text-white font-bold text-lg hover:text-brand-accent transition">info@diamondretool.it</a></div>
+                        <div class="p-6 bg-slate-800/50 rounded-2xl border border-slate-700 transition"><p class="text-xs font-bold text-brand-accent mb-2 uppercase">PEC</p><a href="mailto:lucarelli.m@pec.it" class="text-white font-bold text-lg hover:text-brand-accent transition">lucarelli.m@pec.it</a></div>
                     </div>
                 </div>
                 <div class="bg-white p-12 rounded-[3rem] shadow-2xl border border-slate-200">
@@ -170,6 +171,7 @@
                         <input type="email" name="email" required class="w-full px-6 py-5 rounded-2xl bg-slate-50 border-2 border-slate-100 text-brand-dark text-lg" placeholder="Email">
                         <textarea name="message" rows="5" required class="w-full px-6 py-5 rounded-2xl bg-slate-50 border-2 border-slate-100 text-brand-dark text-lg" placeholder="Message"></textarea>
                         <button type="submit" id="submit-button" class="w-full bg-brand-dark text-white font-black py-6 rounded-2xl hover:bg-brand-accent transition shadow-xl text-xl uppercase tracking-widest">Send Request</button>
+                        <div id="form-status" class="hidden mt-6 p-4 rounded-xl text-center font-bold"></div>
                     </form>
                 </div>
             </div>
@@ -177,20 +179,62 @@
     </section>
 
     <!-- Footer -->
-    <footer class="bg-white pt-4 pb-20 text-slate-600 border-t-8 border-slate-100">
-        <div class="max-w-7xl mx-auto px-4 text-center text-center text-center text-center">
+    <footer class="bg-white pt-4 pb-20 text-slate-600 border-t-8 border-slate-100 text-center">
+        <div class="max-w-7xl mx-auto px-4 text-center">
             <div class="flex flex-col items-center text-center space-y-16">
                 <img src="logo.png" alt="Diamond ReTool" class="h-48 sm:h-64 md:h-72 lg:h-80 mx-auto object-contain">
-                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12 w-full pt-16 border-t border-slate-100 text-center text-center text-center text-center text-center">
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12 w-full pt-16 border-t border-slate-100 text-center">
                     <div><p class="text-xs uppercase font-black text-slate-400 mb-2">Registered Office</p><p class="text-brand-accent font-bold text-lg text-center">Strada San Mauro 234/16<br>Turin (TO)</p></div>
                     <div><p class="text-xs uppercase font-black text-slate-400 mb-2">PEC</p><p class="text-brand-accent font-bold text-lg text-center"><a href="mailto:lucarelli.m@pec.it">lucarelli.m@pec.it</a></p></div>
                     <div><p class="text-xs uppercase font-black text-slate-400 mb-2">Contacts</p><p class="text-brand-accent font-bold text-lg text-center"><a href="mailto:info@diamondretool.it">info@diamondretool.it</a><br><a href="tel:+393515567533">+39 351 5567533</a></p></div>
-                    <div><p class="text-xs uppercase font-black text-slate-400 mb-2">VAT Number</p><p class="text-brand-accent font-black text-xl tracking-widest text-center text-center">13437300018</p></div>
+                    <div><p class="text-xs uppercase font-black text-slate-400 mb-2">VAT Number</p><p class="text-brand-accent font-black text-xl tracking-widest text-center">13437300018</p></div>
                 </div>
-                <div class="pt-12 text-slate-300 text-xs font-bold uppercase tracking-[0.4em] text-center text-center">&copy; 2026 Diamond ReTool. Precision and Durability over time.</div>
+                <div class="pt-12 text-slate-300 text-xs font-bold uppercase tracking-[0.4em] text-center">&copy; 2026 Diamond ReTool. Precision and Durability over time.</div>
             </div>
         </div>
     </footer>
 
+    <script>
+        const form = document.getElementById("contact-form");
+        const status = document.getElementById("form-status");
+        const button = document.getElementById("submit-button");
+
+        async function handleSubmit(event) {
+            event.preventDefault();
+            button.disabled = true;
+            button.innerHTML = "SENDING...";
+            const data = new FormData(event.target);
+            fetch(event.target.action, {
+                method: form.method,
+                body: data,
+                headers: {
+                    'Accept': 'application/json'
+                }
+            })
+            .then(response => {
+                status.classList.remove("hidden");
+                if (response.ok) {
+                    status.innerHTML = "Thank you! Your request has been sent successfully.";
+                    status.classList.add("bg-green-100", "text-green-800");
+                    status.classList.remove("bg-red-100", "text-red-800");
+                    form.reset();
+                    button.style.display = "none";
+                } else {
+                    status.innerHTML = "An error occurred during submission. Please try again later.";
+                    status.classList.add("bg-red-100", "text-red-800");
+                    status.classList.remove("bg-green-100", "text-green-800");
+                    button.disabled = false;
+                    button.innerHTML = "Send Request";
+                }
+            }).catch(() => {
+                status.classList.remove("hidden");
+                status.innerHTML = "Network error. Please check your connection.";
+                status.classList.add("bg-red-100", "text-red-800");
+                button.disabled = false;
+                button.innerHTML = "Send Request";
+            });
+        }
+        form.addEventListener("submit", handleSubmit);
+    </script>
 </body>
 </html>
