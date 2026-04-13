@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<urlset xmlns="[link sospetto rimosso]"
+xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+<!-- Pagina Italiana -->
+
+<url>
+<loc>https://www.google.com/search?q=https://diamondretool.it/</loc>
+<lastmod>2026-04-13</lastmod>
+<changefreq>monthly</changefreq>
+<priority>1.0</priority>
+<xhtml:link rel="alternate" hreflang="it" href="https://www.google.com/search?q=https://diamondretool.it/" />
+<xhtml:link rel="alternate" hreflang="en" href="https://www.google.com/search?q=https://diamondretool.it/en.html" />
+</url>
+
+<!-- Pagina Inglese -->
+
+<url>
+<loc>https://www.google.com/search?q=https://diamondretool.it/en.html</loc>
+<lastmod>2026-04-13</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.8</priority>
+<xhtml:link rel="alternate" hreflang="it" href="https://www.google.com/search?q=https://diamondretool.it/" />
+<xhtml:link rel="alternate" hreflang="en" href="https://www.google.com/search?q=https://diamondretool.it/en.html" />
+</url>
+
+</urlset>

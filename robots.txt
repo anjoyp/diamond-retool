@@ -1,0 +1,4 @@
+﻿User-agent: *
+Allow: /
+Link alla sitemap per aiutare l'indicizzazione
+Sitemap: https://www.google.com/search?q=https://diamondretool.it/sitemap.xml

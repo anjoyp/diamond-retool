@@ -4,11 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Diamond ReTool - Regenerating Value</title>
+    
+    <!-- LCP Image Preload (Hero) -->
+    <link rel="preload" as="image" href="image1.webp" fetchpriority="high">
+
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
     
-    <!-- Structured Data JSON-LD -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -27,8 +30,7 @@
         "addressCountry": "IT"
       },
       "vatID": "IT13437300018",
-      "email": "info@diamondretool.it",
-      "description": "Specialized service in diamond tools and rollers regeneration for modern industry."
+      "email": "info@diamondretool.it"
     }
     </script>
 
@@ -38,13 +40,7 @@
                 extend: {
                     fontFamily: { sans: ['Inter', 'sans-serif'] },
                     colors: {
-                        brand: {
-                            dark: '#0f172a',
-                            light: '#f8fafc',
-                            accent: '#2563eb',
-                            metal: '#64748b',
-                            whatsapp: '#25D366'
-                        }
+                        brand: { dark: '#0f172a', light: '#f8fafc', accent: '#2563eb', metal: '#64748b', whatsapp: '#25D366', linkedin: '#0077b5' }
                     }
                 }
             }
@@ -53,7 +49,6 @@
     <style>
         .image-mask { width: 100%; height: 100%; object-fit: cover; object-position: center; }
         .lang-active { color: #2563eb; font-weight: 800; border-bottom: 2px solid #2563eb; }
-        /* Pixel-perfect CTA Box consistency IT/EN */
         .cta-header-box { width: 120px; height: 50px; }
         @media (min-width: 640px) { .cta-header-box { width: 160px; height: 65px; } }
         @media (min-width: 768px) { .cta-header-box { width: 230px; height: 80px; } }
@@ -61,106 +56,88 @@
 </head>
 <body class="font-sans bg-brand-light text-brand-dark antialiased selection:bg-brand-accent selection:text-white relative text-left">
 
-    <!-- WhatsApp Floating Button -->
-    <a href="https://wa.me/393515567533?text=Good%20morning,%20I%20would%20like%20information%20about%20tool%20regeneration." 
-       target="_blank" 
-       class="fixed bottom-6 right-6 z-[60] bg-brand-whatsapp text-white p-4 rounded-full shadow-2xl hover:scale-110 transition-transform duration-300 flex items-center justify-center group"
-       aria-label="Contact us on WhatsApp">
-        <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24">
-            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
-        </svg>
-        <span class="absolute right-full mr-4 bg-white text-brand-dark px-3 py-1 rounded-lg text-sm font-bold shadow-xl opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap pointer-events-none">
-            Chat with Mauro
-        </span>
+    <!-- WhatsApp Button -->
+    <a href="https://wa.me/393515567533?text=Good%20morning%2C%20I%20would%20like%20to%20receive%20information%20regarding%20tool%20regeneration." target="_blank" class="fixed bottom-6 right-6 z-[60] bg-brand-whatsapp text-white p-4 rounded-full shadow-2xl hover:scale-110 transition-transform duration-300 flex items-center justify-center group" aria-label="WhatsApp">
+        <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86(0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
     </a>
 
     <!-- Navbar -->
     <nav class="bg-white shadow-md sticky top-0 z-50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <div class="flex justify-between h-32 md:h-44 items-center gap-4">
                 <div class="flex items-center flex-shrink-0">
-                    <img src="logo.png" alt="Diamond ReTool" class="h-28 sm:h-32 md:h-36 lg:h-40 object-contain py-2">
+                    <img src="logo.png" alt="Logo" class="h-28 sm:h-32 md:h-36 lg:h-40 object-contain py-2">
                 </div>
-                <div class="flex space-x-4 text-xs md:text-sm font-bold uppercase tracking-widest">
+                <div class="flex space-x-4 text-xs md:text-sm font-bold uppercase tracking-widest text-center">
                     <a href="index.html" class="text-slate-400 hover:text-brand-dark px-2 pb-1 transition-all">IT</a>
                     <a href="en.html" class="lang-active px-2 pb-1 transition-all">EN</a>
                 </div>
                 <div class="flex-shrink-0">
-                    <a href="#richiesta-info" class="cta-header-box bg-brand-accent text-white rounded-3xl font-bold hover:bg-blue-700 transition shadow-lg text-[10px] sm:text-xs md:text-lg flex flex-col items-center justify-center leading-tight text-center uppercase px-2">
-                        <span>Request</span>
-                        <span>information</span>
+                    <a href="#richiesta-info" class="cta-header-box bg-brand-accent text-white rounded-3xl font-bold hover:bg-blue-700 transition shadow-lg text-[10px] sm:text-xs md:text-lg flex flex-col items-center justify-center leading-tight text-center uppercase px-2 text-center text-center">
+                        <span>Request</span><span>information</span>
                     </a>
                 </div>
             </div>
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <header class="relative bg-brand-dark text-white overflow-hidden border-b-4 border-brand-accent min-h-[550px] sm:min-h-[650px] lg:min-h-[850px] flex items-center text-left">
+    <!-- Hero -->
+    <header class="relative bg-brand-dark text-white overflow-hidden border-b-4 border-brand-accent min-h-[550px] sm:min-h-[650px] lg:min-h-[850px] flex items-center">
         <div class="absolute inset-0">
-            <img src="image1.jpg" alt="Diamond ReTool Hero" class="image-mask opacity-60">
+            <img src="image1.webp" alt="Hero" class="image-mask opacity-60" fetchpriority="high" decoding="async">
         </div>
-        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 w-full">
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 w-full text-left">
             <div class="min-h-[180px] sm:min-h-[220px] lg:min-h-[300px] flex flex-col justify-start">
-                <h1 class="text-5xl md:text-7xl lg:text-8xl font-extrabold leading-tight mb-6 drop-shadow-2xl">
-                    Regenerating value.<br>
-                    <span class="text-blue-400">Reducing costs.</span>
-                </h1>
-                <p class="text-xl md:text-3xl font-light text-slate-100 border-l-8 border-brand-accent pl-6 max-w-2xl drop-shadow-lg text-left">
-                    A diamond is forever. So are your tools.
-                </p>
+                <h1 class="text-5xl md:text-7xl lg:text-8xl font-extrabold leading-tight mb-6 drop-shadow-2xl">Regenerating value.<br><span class="text-blue-400">Reducing costs.</span></h1>
+                <p class="text-xl md:text-3xl font-light text-slate-100 border-l-8 border-brand-accent pl-6 max-w-2xl drop-shadow-lg text-left">A diamond is forever. So are your tools.</p>
             </div>
         </div>
     </header>
 
     <!-- About Us -->
-    <section class="py-24 bg-white text-left">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section class="py-24 bg-white text-left text-left">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-left text-left text-left">
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-stretch">
                 <div class="space-y-12 py-4 flex flex-col justify-center min-h-[550px] lg:min-h-[650px]">
-                    <h2 class="text-4xl font-extrabold text-brand-dark flex items-center"><span class="w-10 h-1 bg-brand-accent mr-4"></span>About us</h2>
-                    <div class="text-brand-metal leading-relaxed space-y-6 text-xl">
-                        <p>Diamond ReTool was born from the experience gained within a company that helped write the history of diamond tools and rollers.</p>
-                        <p>The skills acquired over time represent a technical and human heritage of great value today.</p>
+                    <h2 class="text-4xl font-extrabold text-brand-dark flex items-center text-left text-left"><span class="w-10 h-1 bg-brand-accent mr-4"></span>About us</h2>
+                    <div class="text-brand-metal leading-relaxed space-y-6 text-xl text-left text-left text-left">
+                        <p>Diamond ReTool was born from experience in diamond tools history.</p>
+                        <p>Skills acquired over time represent a technical and human heritage of great value today.</p>
                     </div>
-                    <div class="bg-slate-50 p-10 rounded-[3rem] border border-slate-100 shadow-sm">
+                    <div class="bg-slate-50 p-10 rounded-[3rem] border border-slate-100 shadow-sm text-left text-left">
                         <h2 class="text-3xl font-extrabold mb-6 text-brand-dark italic text-xl">Current context</h2>
-                        <p class="text-brand-metal text-lg leading-relaxed text-left">Optimizing resources and reducing waste is no longer an option, but a strategic necessity for every modern company.</p>
+                        <p class="text-brand-metal text-lg leading-relaxed text-left">Optimizing resources and reducing waste is no longer an option, but a strategic necessity.</p>
                     </div>
                 </div>
                 <div class="relative min-h-[400px] lg:h-auto rounded-[3rem] overflow-hidden shadow-2xl bg-slate-200 lg:sticky lg:top-48">
-                    <img src="image2.jpg" alt="Industrial Processing" class="image-mask">
+                    <img src="image2.webp" alt="Work" class="image-mask text-left" loading="lazy" decoding="async">
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Our Vision -->
+    <!-- Vision -->
     <section class="py-28 bg-slate-900 text-white text-center px-4">
-        <div class="max-w-4xl mx-auto">
-            <h2 class="text-brand-accent font-bold uppercase tracking-[0.3em] mb-8 text-center">Our vision</h2>
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-brand-accent font-bold uppercase tracking-[0.3em] mb-8 text-center text-center">Our vision</h2>
             <p class="text-4xl md:text-6xl font-light leading-tight mb-12 italic text-center">“A diamond is forever.”</p>
-            <div class="w-32 h-1.5 bg-brand-accent mx-auto mb-12 text-center"></div>
-            <p class="text-2xl md:text-3xl text-slate-300 font-light max-w-3xl mx-auto leading-relaxed text-center">
-                It is precisely from this principle that the vision of Diamond ReTool is born. If a diamond is forever, then even the tools that use it can continue to generate value beyond their apparent life cycle.
-            </p>
+            <div class="w-32 h-1.5 bg-brand-accent mx-auto mb-12 text-center text-center"></div>
+            <p class="text-2xl md:text-3xl text-slate-300 font-light max-w-3xl mx-auto leading-relaxed text-center text-center text-center">If a diamond is forever, then tools can continue to generate value beyond their apparent cycle.</p>
         </div>
     </section>
 
-    <!-- Technology (image3) -->
-    <section class="py-24 bg-white text-left">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-                <div class="order-2 lg:order-1 relative h-[500px] lg:h-[600px] rounded-[3rem] overflow-hidden shadow-xl bg-slate-200">
-                    <img src="image3.jpg" alt="Technical Detail" class="image-mask">
+    <!-- Technology -->
+    <section class="py-24 bg-white text-left text-left">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-left text-left">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center text-left">
+                <div class="order-2 lg:order-1 relative h-[500px] lg:h-[600px] rounded-[3rem] overflow-hidden shadow-xl bg-slate-200 text-left">
+                    <img src="image3.webp" alt="Detail" class="image-mask text-left" loading="lazy" decoding="async">
                 </div>
-                <div class="order-1 lg:order-2 space-y-12 min-h-[450px] flex flex-col justify-center">
-                    <h2 class="text-4xl font-extrabold mb-8 text-brand-dark">Technology and experience:<br><span class="text-brand-accent text-3xl">a fundamental balance</span></h2>
-                    <div class="text-brand-metal text-xl space-y-6">
-                        <p>Production processes have undergone a significant evolution over the years, thanks to the introduction of increasingly advanced technologies.</p>
-                        <div class="bg-blue-50 p-8 rounded-3xl border-l-8 border-brand-accent text-brand-dark font-medium italic text-2xl shadow-inner text-left">
-                            Sight, hearing, and technical sensitivity represent fundamental tools that still play a decisive role today.
-                        </div>
+                <div class="order-1 lg:order-2 space-y-12 min-h-[450px] flex flex-col justify-center text-left text-left">
+                    <h2 class="text-4xl font-extrabold text-brand-dark text-left">Technology and experience:<br><span class="text-brand-accent text-3xl">a fundamental balance</span></h2>
+                    <div class="text-brand-metal text-xl space-y-6 text-left">
+                        <p>Processes evolve, but sight and hearing remain fundamental tools playing a decisive role today.</p>
+                        <div class="bg-blue-50 p-8 rounded-3xl border-l-8 border-brand-accent text-brand-dark font-medium italic text-2xl shadow-inner text-left">Technical sensitivity and experience remain at our heart.</div>
                     </div>
                 </div>
             </div>
@@ -168,31 +145,26 @@
     </section>
 
     <!-- Contacts section -->
-    <section id="contatti" class="pt-24 pb-12 bg-slate-900 text-white border-t border-slate-800">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center lg:text-left">
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-20 items-start">
-                <div class="space-y-12">
-                    <div class="text-center lg:text-left min-h-[200px]">
-                        <h2 class="text-5xl font-extrabold mb-8 text-white">Our invitation</h2>
-                        <p class="text-2xl text-slate-300 leading-relaxed text-center lg:text-left">
-                            Stopping for a moment can make all the difference. <strong class="text-brand-accent underline decoration-white decoration-4 underline-offset-8">Reduce costs and maximize your resources.</strong>
-                        </p>
-                    </div>
-                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 text-center text-center">
-                        <div class="p-6 bg-slate-800/50 rounded-2xl border border-slate-700 transition"><p class="text-xs font-bold text-brand-accent mb-2 uppercase tracking-widest text-center">Manager</p><p class="text-white font-bold text-xl text-center text-center">Mauro Lucarelli</p></div>
-                        <div class="p-6 bg-slate-800/50 rounded-2xl border border-slate-700 transition"><p class="text-xs font-bold text-brand-accent mb-2 uppercase tracking-widest text-center">Phone</p><a href="tel:+393515567533" class="text-white font-bold text-xl hover:text-brand-accent transition text-center text-center">+39 351 5567533</a></div>
-                        <div class="p-6 bg-slate-800/50 rounded-2xl border border-slate-700 transition"><p class="text-xs font-bold text-brand-accent mb-2 uppercase tracking-widest text-center">Email</p><a href="mailto:info@diamondretool.it" class="text-white font-bold text-lg hover:text-brand-accent transition text-center text-center">info@diamondretool.it</a></div>
-                        <div class="p-6 bg-slate-800/50 rounded-2xl border border-slate-700 transition"><p class="text-xs font-bold text-brand-accent mb-2 uppercase tracking-widest text-center">PEC</p><a href="mailto:lucarelli.m@pec.it" class="text-white font-bold text-lg hover:text-brand-accent transition text-center text-center">lucarelli.m@pec.it</a></div>
+    <section id="contatti" class="pt-24 pb-12 bg-slate-900 text-white border-t border-slate-800 text-center">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center lg:text-left text-center">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-20 items-start text-center">
+                <div class="space-y-12 text-center text-center">
+                    <div class="min-h-[200px] text-center lg:text-left text-center text-center"><h2 class="text-5xl font-extrabold mb-8 text-center text-center">Our invitation</h2><p class="text-2xl text-slate-300 leading-relaxed text-center lg:text-left text-center text-center">Stopping for a moment can make all the difference. <strong class="text-brand-accent underline decoration-white decoration-4 underline-offset-8 text-center lg:text-left text-center text-center">Reduce costs and maximize your resources.</strong></p></div>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 text-center text-center text-center">
+                        <div class="p-6 bg-slate-800/50 rounded-2xl border border-slate-700 transition text-center text-center text-center"><p class="text-xs font-bold text-brand-accent mb-2 uppercase text-center text-center">Manager</p><p class="text-white font-bold text-xl text-center text-center text-center">Mauro Lucarelli</p></div>
+                        <div class="p-6 bg-slate-800/50 rounded-2xl border border-slate-700 transition text-center text-center text-center"><p class="text-xs font-bold text-brand-accent mb-2 uppercase text-center text-center">Phone</p><a href="tel:+393515567533" class="text-white font-bold text-xl hover:text-brand-accent transition text-center text-center text-center">+39 351 5567533</a></div>
+                        <div class="p-6 bg-slate-800/50 rounded-2xl border border-slate-700 transition text-center text-center text-center"><p class="text-xs font-bold text-brand-accent mb-2 uppercase text-center text-center text-center">Email</p><a href="mailto:info@diamondretool.it" class="text-white font-bold text-lg hover:text-brand-accent transition text-center text-center text-center">info@diamondretool.it</a></div>
+                        <div class="p-6 bg-slate-800/50 rounded-2xl border border-slate-700 transition text-center text-center text-center"><p class="text-xs font-bold text-brand-accent mb-2 uppercase text-center text-center text-center">PEC</p><a href="mailto:lucarelli.m@pec.it" class="text-white font-bold text-lg hover:text-brand-accent transition text-center text-center text-center text-center">lucarelli.m@pec.it</a></div>
                     </div>
                 </div>
-                <div class="bg-white p-12 rounded-[3rem] shadow-2xl border border-slate-200">
-                    <h3 class="text-3xl font-extrabold mb-10 text-brand-dark text-center uppercase tracking-tight">Request information</h3>
-                    <form id="contact-form" action="https://formspree.io/f/xnjoezag" method="POST" class="space-y-8 text-left">
+                <div id="richiesta-info" class="bg-white p-12 rounded-[3rem] shadow-2xl border border-slate-200 scroll-mt-32 md:scroll-mt-44 text-brand-dark text-left">
+                    <h3 class="text-3xl font-extrabold mb-10 text-center uppercase text-center text-center text-center">Request information</h3>
+                    <form id="contact-form" action="https://formspree.io/f/xnjoezag" method="POST" class="space-y-8 text-left text-left">
                         <input type="text" name="name" required class="w-full px-6 py-5 rounded-2xl bg-slate-50 border-2 border-slate-100 text-lg focus:border-brand-accent transition outline-none" placeholder="Name / Company">
                         <input type="email" name="email" required class="w-full px-6 py-5 rounded-2xl bg-slate-50 border-2 border-slate-100 text-lg focus:border-brand-accent transition outline-none" placeholder="Email">
                         <textarea name="message" rows="5" required class="w-full px-6 py-5 rounded-2xl bg-slate-50 border-2 border-slate-100 text-lg focus:border-brand-accent transition outline-none" placeholder="Message"></textarea>
-                        <button type="submit" id="submit-button" class="w-full bg-brand-dark text-white font-black py-6 rounded-2xl hover:bg-brand-accent transition shadow-xl text-xl uppercase tracking-widest">Send Request</button>
-                        <div id="form-status" class="hidden mt-6 p-4 rounded-xl text-center font-bold"></div>
+                        <button type="submit" id="submit-button" class="w-full bg-brand-dark text-white font-black py-6 rounded-2xl hover:bg-brand-accent transition shadow-xl text-xl uppercase tracking-widest text-center text-center text-center text-center">Send Request</button>
+                        <div id="form-status" class="hidden mt-6 p-4 rounded-xl text-center font-bold text-center text-center text-center text-center text-center text-center"></div>
                     </form>
                 </div>
             </div>
@@ -200,17 +172,24 @@
     </section>
 
     <!-- Footer -->
-    <footer class="bg-white pt-4 pb-20 text-slate-600 border-t-8 border-slate-100">
+    <footer class="bg-white pt-4 pb-20 text-slate-600 border-t-8 border-slate-100 text-center text-center">
         <div class="max-w-7xl mx-auto px-4 text-center">
             <div class="flex flex-col items-center text-center space-y-16">
-                <img src="logo.png" alt="Diamond ReTool" class="h-48 sm:h-64 md:h-72 lg:h-80 mx-auto object-contain">
-                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12 w-full pt-16 border-t border-slate-100 text-center">
-                    <div><p class="text-xs uppercase font-black text-slate-400 mb-2">Office</p><p class="text-brand-accent font-bold text-lg text-center text-center">Strada San Mauro 234/16<br>Turin (TO)</p></div>
-                    <div><p class="text-xs uppercase font-black text-slate-400 mb-2">PEC</p><p class="text-brand-accent font-bold text-lg text-center text-center">lucarelli.m@pec.it</p></div>
-                    <div><p class="text-xs uppercase font-black text-slate-400 mb-2 text-center">Contacts</p><p class="text-brand-accent font-bold text-lg text-center text-center">info@diamondretool.it<br>+39 351 5567533</p></div>
-                    <div><p class="text-xs uppercase font-black text-slate-400 mb-2 text-center text-center">VAT ID</p><p class="text-brand-accent font-black text-xl tracking-widest text-center text-center">13437300018</p></div>
+                <img src="logo.png" alt="Logo" class="h-48 sm:h-64 md:h-72 lg:h-80 mx-auto object-contain text-center">
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12 w-full pt-16 border-t border-slate-100 text-center text-center">
+                    <div><p class="text-xs uppercase font-black text-slate-400 mb-2 text-center text-center text-center">Office</p><p class="text-brand-accent font-bold text-lg text-center text-center">Strada San Mauro 234/16<br>Turin (TO)</p></div>
+                    <div><p class="text-xs uppercase font-black text-slate-400 mb-2 text-center text-center text-center text-center">PEC</p><p class="text-brand-accent font-bold text-lg text-center text-center text-center text-center">lucarelli.m@pec.it</p></div>
+                    <div>
+                        <p class="text-xs uppercase font-black text-slate-400 mb-2 text-center text-center text-center text-center">Contacts</p>
+                        <p class="text-brand-accent font-bold text-lg text-center text-center text-center text-center">info@diamondretool.it<br>+39 351 5567533</p>
+                        <a href="https://www.linkedin.com/company/diamondretool" target="_blank" class="flex items-center justify-center gap-2 text-brand-linkedin font-black hover:text-brand-dark transition mt-4 text-center text-center text-center text-center">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                            <span>LinkedIn</span>
+                        </a>
+                    </div>
+                    <div><p class="text-xs uppercase font-black text-slate-400 mb-2 text-center text-center text-center text-center text-center">VAT ID</p><p class="text-brand-accent font-black text-xl tracking-widest text-center text-center text-center text-center text-center">13437300018</p></div>
                 </div>
-                <div class="pt-12 text-slate-300 text-xs font-bold uppercase tracking-[0.4em] text-center text-center">&copy; 2026 Diamond ReTool. Precision and Durability.</div>
+                <div class="pt-12 text-slate-300 text-xs font-bold uppercase tracking-[0.4em] text-center text-center text-center text-center text-center">&copy; 2026 Diamond ReTool. Precision and Durability.</div>
             </div>
         </div>
     </footer>
@@ -219,34 +198,25 @@
         const form = document.getElementById("contact-form");
         const status = document.getElementById("form-status");
         const button = document.getElementById("submit-button");
-
         async function handleSubmit(event) {
             event.preventDefault();
-            button.disabled = true;
-            button.innerHTML = "SENDING...";
+            button.disabled = true; button.innerHTML = "SENDING...";
             const data = new FormData(event.target);
             fetch(event.target.action, { method: form.method, body: data, headers: { 'Accept': 'application/json' } })
             .then(response => {
                 status.classList.remove("hidden");
                 if (response.ok) {
-                    status.innerHTML = "Thank you! Your request has been sent successfully.";
+                    status.innerHTML = "Thank you! Your request has been sent.";
                     status.classList.add("bg-green-100", "text-green-800");
-                    status.classList.remove("bg-red-100", "text-red-800");
-                    form.reset();
-                    button.style.display = "none";
+                    form.reset(); button.style.display = "none";
                 } else {
-                    status.innerHTML = "An error occurred. Please try again later.";
+                    status.innerHTML = "Error occurred. Please try again.";
                     status.classList.add("bg-red-100", "text-red-800");
-                    status.classList.remove("bg-green-100", "text-green-800");
-                    button.disabled = false;
-                    button.innerHTML = "Send Request";
+                    button.disabled = false; button.innerHTML = "Send Request";
                 }
             }).catch(() => {
-                status.classList.remove("hidden");
-                status.innerHTML = "Network error. Please check your connection.";
-                status.classList.add("bg-red-100", "text-red-800");
-                button.disabled = false;
-                button.innerHTML = "Send Request";
+                status.classList.remove("hidden"); status.innerHTML = "Network error.";
+                status.classList.add("bg-red-100", "text-red-800"); button.disabled = false;
             });
         }
         form.addEventListener("submit", handleSubmit);
