@@ -1,28 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <!-- Pagina Italiana Principal -->
+  <url>
+    <loc>https://diamondretool.it/</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="it" href="https://diamondretool.it/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://diamondretool.it/en.html"/>
+  </url>
 
-<urlset xmlns="[link sospetto rimosso]"
-xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <!-- Pagina Inglese -->
+  <url>
+    <loc>https://diamondretool.it/en.html</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="it" href="https://diamondretool.it/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://diamondretool.it/en.html"/>
+  </url>
 
-<!-- Pagina Italiana -->
+  <!-- Privacy IT -->
+  <url>
+    <loc>https://diamondretool.it/privacy-it.html</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+    <xhtml:link rel="alternate" hreflang="it" href="https://diamondretool.it/privacy-it.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://diamondretool.it/privacy-en.html"/>
+  </url>
 
-<url>
-<loc>https://www.google.com/search?q=https://diamondretool.it/</loc>
-<lastmod>2026-04-13</lastmod>
-<changefreq>monthly</changefreq>
-<priority>1.0</priority>
-<xhtml:link rel="alternate" hreflang="it" href="https://www.google.com/search?q=https://diamondretool.it/" />
-<xhtml:link rel="alternate" hreflang="en" href="https://www.google.com/search?q=https://diamondretool.it/en.html" />
-</url>
-
-<!-- Pagina Inglese -->
-
-<url>
-<loc>https://www.google.com/search?q=https://diamondretool.it/en.html</loc>
-<lastmod>2026-04-13</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.8</priority>
-<xhtml:link rel="alternate" hreflang="it" href="https://www.google.com/search?q=https://diamondretool.it/" />
-<xhtml:link rel="alternate" hreflang="en" href="https://www.google.com/search?q=https://diamondretool.it/en.html" />
-</url>
+  <!-- Privacy EN -->
+  <url>
+    <loc>https://diamondretool.it/privacy-en.html</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+    <xhtml:link rel="alternate" hreflang="it" href="https://diamondretool.it/privacy-it.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://diamondretool.it/privacy-en.html"/>
+  </url>
 
 </urlset>

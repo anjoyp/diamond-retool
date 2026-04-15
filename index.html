@@ -2,21 +2,60 @@
 <html lang="it" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
-    <title>Diamond ReTool - Rigeneriamo Valore attraverso la Precisione</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, viewport-fit=cover">
+    <title>Diamond ReTool | Rigenerazione Utensili Diamantati Torino</title>
     
-    <!-- SEO CRITICA: Meta e Social -->
-    <meta name="description" content="Diamond ReTool: Esperti nella rigenerazione di utensili e rulli diamantati. Riduciamo i costi industriali e rigeneriamo valore con tecnologia e sensibilità artigianale.">
+    <!-- SEO & Social -->
+    <meta name="description" content="Diamond ReTool a Torino: leader nella rigenerazione di rulli e utensili diamantati. Riduciamo i costi industriali con precisione artigianale e tecnologia avanzata.">
     <link rel="canonical" href="https://diamondretool.it/">
-    <meta property="og:title" content="Diamond ReTool - Rigenerazione Utensili Diamantati">
-    <meta property="og:description" content="Un diamante è per sempre. Anche i tuoi utensili. Riduci gli sprechi e ottimizza le risorse.">
+    <link rel="alternate" hreflang="it" href="https://diamondretool.it/">
+    <link rel="alternate" hreflang="en" href="https://diamondretool.it/en.html">
+    <link rel="alternate" hreflang="x-default" href="https://diamondretool.it/">
+    
+    <meta property="og:title" content="Diamond ReTool - Rigenerazione Valore e Precisione">
+    <meta property="og:description" content="Ottimizza le risorse industriali. Rigeneriamo i tuoi utensili diamantati garantendo durata e precisione.">
     <meta property="og:image" content="logo.png">
     <meta property="og:type" content="website">
 
-    <!-- PERFORMANCE: Preload LCP -->
-    <link rel="preload" as="image" href="image1.webp" fetchpriority="high">
+    <!-- Markup Strutturato LocalBusiness Potenziato (AEO/GEO) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Diamond ReTool",
+      "description": "Specialisti nella rigenerazione di utensili e rulli diamantati per l'industria meccanica e manifatturiera.",
+      "image": "https://diamondretool.it/logo.png",
+      "@id": "https://diamondretool.it",
+      "url": "https://diamondretool.it",
+      "telephone": "+393515567533",
+      "email": "info@diamondretool.it",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Strada San Mauro 234/16",
+        "addressLocality": "Torino",
+        "addressRegion": "TO",
+        "postalCode": "10156",
+        "addressCountry": "IT"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 45.1051,
+        "longitude": 7.7412
+      },
+      "sameAs": [
+        "https://www.linkedin.com/company/diamondretool"
+      ],
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+        "opens": "08:30",
+        "closes": "18:00"
+      }
+    }
+    </script>
 
-    <!-- Framework e Fonts -->
+    <!-- Performance & Styles -->
+    <link rel="preload" as="image" href="image1.webp" fetchpriority="high">
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
     
@@ -25,16 +64,7 @@
             theme: {
                 extend: {
                     fontFamily: { sans: ['Inter', 'sans-serif'] },
-                    colors: {
-                        brand: {
-                            dark: '#0f172a',
-                            light: '#f8fafc',
-                            accent: '#2563eb',
-                            metal: '#64748b',
-                            whatsapp: '#25D366',
-                            linkedin: '#0077b5'
-                        }
-                    }
+                    colors: { brand: { dark: '#0f172a', light: '#ffffff', accent: '#2563eb', metal: '#64748b', whatsapp: '#25D366', linkedin: '#0077b5' } }
                 }
             }
         }
@@ -43,48 +73,47 @@
     <style>
         .image-mask { width: 100%; height: 100%; object-fit: cover; object-position: center; }
         .lang-active { color: #2563eb; font-weight: 800; border-bottom: 2px solid #2563eb; }
-        
-        /* UI FIX: Proporzioni bilanciate per iPhone 16 */
-        .cta-header-box { width: 135px; height: 58px; }
-        @media (min-width: 640px) { .cta-header-box { width: 165px; height: 68px; } }
-        @media (min-width: 768px) { .cta-header-box { width: 230px; height: 80px; } }
+        .cta-nav {
+            display: flex; flex-direction: column; align-items: center; justify-content: center;
+            padding: 0.7rem 1.1rem; border-radius: 1.2rem; line-height: 1.1; text-align: center;
+            min-width: 130px; white-space: nowrap; transition: all 0.3s ease;
+        }
+        @media (min-width: 768px) { .cta-nav { padding: 1.2rem 2.5rem; border-radius: 1.5rem; min-width: 240px; } }
     </style>
 </head>
 <body class="font-sans bg-brand-light text-brand-dark antialiased relative selection:bg-brand-accent selection:text-white">
 
-    <!-- COOKIE BANNER: Visibile, Chiaro, Conforme -->
-    <div id="cookie-banner" class="fixed bottom-6 left-6 right-6 md:left-auto md:right-8 md:w-[480px] bg-slate-900 text-white p-8 z-[100] rounded-[2.5rem] shadow-[0_20px_50px_rgba(0,0,0,0.5)] border border-slate-700 opacity-0 pointer-events-none transition-all duration-700 translate-y-12">
+    <!-- Cookie Banner -->
+    <div id="cookie-banner" class="fixed bottom-6 left-6 right-6 md:left-auto md:right-8 md:w-[450px] bg-slate-900 text-white p-8 z-[100] rounded-[2.5rem] shadow-2xl border border-slate-700 opacity-0 pointer-events-none transition-all duration-700 translate-y-12 text-left">
         <div class="flex flex-col gap-6">
             <div>
-                <h4 class="text-xl font-bold mb-2 flex items-center gap-2 text-white">🍪 Gestione Privacy</h4>
-                <p class="text-sm text-slate-400 leading-relaxed">
-                    Utilizziamo esclusivamente cookie tecnici per garantire il funzionamento del sito e la sicurezza del modulo contatti. Cliccando su "Accetto" acconsenti al loro utilizzo. Consulta la <a href="privacy-it.html" class="text-white underline font-bold">Privacy Policy</a>.
+                <h4 class="text-xl font-bold mb-2">Gestione Privacy</h4>
+                <p class="text-sm text-slate-400 leading-relaxed text-left">
+                    Utilizziamo cookie tecnici e servizi terzi (Formspree) necessari per il funzionamento del sito. Cliccando su "Accetto" ne acconsenti l'uso. Leggi la <a href="privacy-it.html" class="text-white underline font-bold">Privacy and Cookie Policy</a>.
                 </p>
             </div>
             <div class="flex gap-3">
                 <button onclick="acceptCookies()" class="flex-1 bg-brand-accent hover:bg-blue-700 text-white font-black py-4 rounded-2xl transition-all uppercase tracking-widest text-xs">Accetto</button>
-                <button onclick="acceptCookies()" class="flex-1 bg-slate-800 hover:bg-slate-700 text-slate-300 font-bold py-4 rounded-2xl transition-all uppercase tracking-widest text-xs text-center">Necessari</button>
+                <button onclick="acceptCookies()" class="flex-1 bg-slate-800 hover:bg-slate-700 text-slate-300 font-bold py-4 rounded-2xl transition-all uppercase tracking-widest text-xs">Necessari</button>
             </div>
         </div>
     </div>
 
-    <!-- WhatsApp Flottante -->
-    <a href="https://wa.me/393515567533?text=Buongiorno%20Diamond%20ReTool%2C%20desidero%20ricevere%20informazioni%20sulla%20rigenerazione." target="_blank" class="fixed bottom-8 right-8 z-[60] bg-brand-whatsapp text-white p-5 rounded-full shadow-2xl hover:scale-110 transition-transform duration-300 flex items-center justify-center" aria-label="Contattaci su WhatsApp">
+    <!-- WhatsApp -->
+    <a href="https://wa.me/393515567533" target="_blank" class="fixed bottom-6 right-6 z-[60] bg-brand-whatsapp text-white p-4 rounded-full shadow-2xl hover:scale-110 transition-transform flex items-center justify-center" aria-label="WhatsApp">
         <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
     </a>
 
-    <!-- Navbar: Fix Spaziature Mobile -->
-    <nav class="bg-white shadow-md sticky top-0 z-50">
-        <div class="max-w-7xl mx-auto px-6 sm:px-10 lg:px-12 flex justify-between h-28 md:h-44 items-center">
-            <div class="flex items-center flex-shrink-0">
-                <img src="logo.png" alt="Diamond ReTool Logo" width="180" height="60" class="h-20 sm:h-28 md:h-36 object-contain py-2">
-            </div>
-            <div class="flex items-center gap-4 md:gap-8">
-                <div class="flex space-x-3 text-xs md:text-sm font-bold uppercase tracking-widest text-center">
-                    <a href="index.html" class="lang-active px-1 pb-1">IT</a>
-                    <a href="en.html" class="text-slate-400 hover:text-brand-dark px-1 pb-1 transition-all">EN</a>
+    <!-- Navbar -->
+    <nav class="bg-white sticky top-0 z-50 border-b border-slate-100">
+        <div class="max-w-7xl mx-auto px-6 flex justify-between items-center py-4 md:py-6">
+            <a href="index.html" class="flex-shrink-0"><img src="logo.png" alt="Diamond ReTool Logo - Rigenerazione Utensili Torino" class="h-20 md:h-28 lg:h-32 object-contain transition-all duration-300"></a>
+            <div class="flex items-center gap-4 md:gap-10">
+                <div class="flex space-x-3 text-[10px] md:text-sm font-bold uppercase tracking-widest text-center">
+                    <a href="index.html" class="lang-active">IT</a>
+                    <a href="en.html" class="text-slate-400 hover:text-brand-dark transition-all">EN</a>
                 </div>
-                <a href="#richiesta-info" class="cta-header-box bg-brand-accent text-white rounded-[1.5rem] font-bold hover:bg-blue-700 transition shadow-lg text-[10px] sm:text-xs md:text-lg flex flex-col items-center justify-center leading-tight text-center uppercase">
+                <a href="#modulo-contatto" class="cta-nav bg-brand-accent text-white font-extrabold shadow-lg hover:bg-blue-700 text-[10px] md:text-lg uppercase">
                     <span>Richiedi</span><span>informazioni</span>
                 </a>
             </div>
@@ -92,148 +121,156 @@
     </nav>
 
     <!-- Hero -->
-    <header class="relative bg-brand-dark text-white overflow-hidden border-b-4 border-brand-accent min-h-[500px] flex items-center">
-        <div class="absolute inset-0"><img src="image1.webp" alt="Background Rigenerazione" class="image-mask opacity-60" fetchpriority="high"></div>
-        <div class="relative max-w-7xl mx-auto px-6 sm:px-10 py-20 w-full text-left">
-            <h1 class="text-5xl md:text-7xl lg:text-8xl font-extrabold leading-tight mb-6 drop-shadow-2xl">Rigeneriamo valore.<br><span class="text-blue-400">Riduciamo i costi.</span></h1>
-            <p class="text-xl md:text-3xl font-light text-slate-100 border-l-8 border-brand-accent pl-6 max-w-2xl drop-shadow-lg italic">Un diamante è per sempre. Anche i tuoi utensili.</p>
+    <header class="relative bg-brand-dark text-white overflow-hidden min-h-[500px] flex items-center border-b-4 border-brand-accent">
+        <div class="absolute inset-0"><img src="image1.webp" alt="Lavorazione di precisione rulli diamantati industriale" class="image-mask opacity-60"></div>
+        <div class="relative max-w-7xl mx-auto px-6 py-20 w-full text-left">
+            <h1 class="text-5xl md:text-7xl lg:text-8xl font-extrabold leading-tight mb-8">Rigeneriamo valore.<br><span class="text-blue-400">Riduciamo costi.</span></h1>
+            <div class="mt-8 inline-block bg-white/80 backdrop-blur-sm p-6 md:p-8 rounded-3xl border-l-8 border-brand-accent shadow-inner max-w-2xl text-left">
+                <p class="text-2xl md:text-4xl font-light text-brand-dark italic leading-tight text-left">
+                    Un diamante è per sempre.<br><span class="font-bold text-brand-accent">Anche i tuoi utensili.</span>
+                </p>
+            </div>
         </div>
     </header>
 
-    <!-- Chi Siamo: Integrale -->
-    <section class="py-24 bg-white text-left">
-        <div class="max-w-7xl mx-auto px-6 sm:px-10">
+    <!-- Articolo Semantico (SEO/AEO) -->
+    <article class="py-24 bg-white text-left">
+        <div class="max-w-7xl mx-auto px-6">
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
                 <div class="space-y-12 text-left">
-                    <div>
-                        <h2 class="text-4xl font-extrabold mb-8 text-brand-dark flex items-center text-left"><span class="w-10 h-1 bg-brand-accent mr-4 text-left"></span>Chi siamo</h2>
-                        <div class="text-brand-metal leading-relaxed space-y-6 text-xl text-left">
-                            <p>Diamond ReTool nasce dall’esperienza maturata all’interno di una realtà che ha contribuito a scrivere la storia degli utensili e dei rulli diamantati.</p>
-                            <p>Le competenze acquisite nel tempo rappresentano oggi un patrimonio tecnico e umano di grande valore. Studi e ricerca hanno dato origine a un servizio altamente specializzato.</p>
+                    <section>
+                        <h2 class="text-4xl font-extrabold mb-8 text-brand-dark flex items-center"><span class="w-10 h-1 bg-brand-accent mr-4"></span>Chi siamo</h2>
+                        <div class="text-brand-metal leading-relaxed space-y-6 text-xl">
+                            <p>Diamond ReTool nasce dall’esperienza maturata all’interno di una realtà che ha contribuito a scrivere la <strong>storia degli utensili e dei rulli diamantati a Torino</strong>.</p>
+                            <p>Le competenze acquisite nel tempo, unite agli insegnamenti tramandati da chi ha perfezionato l’arte del taglio dei singoli diamanti, rappresentano oggi un patrimonio tecnico e umano di grande valore.</p>
+                            <p>Studi, ricerca, sviluppo e tecniche specifiche, affinati in anni di esperienza sul campo, hanno dato origine a una nuova opportunità: offrire un servizio altamente specializzato, capace di rispondere concretamente alle esigenze dell’industria moderna.</p>
                         </div>
-                    </div>
-                    <div class="bg-slate-50 p-10 rounded-[3rem] border border-slate-100 shadow-sm text-left">
-                        <h2 class="text-3xl font-extrabold mb-6 text-brand-dark italic text-left">Il contesto attuale</h2>
-                        <p class="text-brand-metal text-lg leading-relaxed text-left">Ottimizzare le risorse e ridurre gli sprechi è ormai una necessità strategica fondamentale per ogni azienda moderna che vuole restare competitiva.</p>
-                    </div>
+                    </section>
+                    <section class="bg-white p-10 rounded-[3rem] border border-slate-100 shadow-sm text-left">
+                        <h3 class="text-3xl font-extrabold mb-6 text-brand-dark italic">Il contesto attuale</h3>
+                        <div class="text-brand-metal leading-relaxed space-y-4 text-lg">
+                            <p>L’avvento delle nuove tecnologie e una crisi globale senza precedenti stanno mettendo a dura prova le aziende manifatturiere.</p>
+                            <p>Sempre più spesso le imprese si trovano strette tra l’aumento dei costi e la carenza di personale qualificato. <span class="text-brand-dark font-bold underline decoration-brand-accent decoration-2 text-xl">Ottimizzare le risorse e ridurre gli sprechi non è più un’opzione, ma una necessità strategica.</span></p>
+                        </div>
+                    </section>
                 </div>
-                <div class="relative h-[500px] lg:h-[700px] rounded-[3rem] overflow-hidden shadow-2xl lg:sticky lg:top-52">
-                    <img src="image2.webp" alt="Lavorazione Professionale" class="image-mask" loading="lazy">
-                </div>
+                <aside class="relative h-[600px] lg:h-[800px] rounded-[3rem] overflow-hidden shadow-2xl bg-slate-200 lg:sticky lg:top-48">
+                    <img src="image2.webp" alt="Tecnico esperto nella rigenerazione di utensili industriali" class="image-mask">
+                </aside>
             </div>
         </div>
-    </section>
+    </article>
 
     <!-- Visione -->
     <section class="py-28 bg-slate-900 text-white text-center px-6">
         <div class="max-w-4xl mx-auto">
-            <h2 class="text-brand-accent font-bold uppercase tracking-[0.3em] mb-8 text-center">La nostra visione</h2>
-            <p class="text-4xl md:text-6xl font-light leading-tight mb-12 italic text-center">“Un diamante è per sempre.”</p>
-            <div class="w-32 h-1.5 bg-brand-accent mx-auto mb-12 text-center"></div>
-            <p class="text-2xl md:text-3xl text-slate-300 font-light leading-relaxed text-center">Se un diamante è per sempre, allora gli utensili che lo impiegano possono continuare a generare valore ben oltre il loro apparente ciclo di vita.</p>
+            <h2 class="text-brand-accent font-bold uppercase tracking-[0.3em] mb-8">La nostra visione</h2>
+            <p class="text-4xl md:text-6xl font-light leading-tight mb-12 italic">“Un diamante è per sempre.”</p>
+            <div class="w-32 h-1.5 bg-brand-accent mx-auto mb-12"></div>
+            <p class="text-2xl md:text-3xl text-slate-300 font-light leading-relaxed">
+                Se un diamante è per sempre, allora anche gli utensili che lo impiegano possono continuare a generare valore, ben oltre il loro apparente ciclo di vita.
+            </p>
         </div>
     </section>
 
-    <!-- Tecnologia -->
+    <!-- Tecnologia ed Esperienza -->
     <section class="py-24 bg-white text-left">
-        <div class="max-w-7xl mx-auto px-6 sm:px-10">
+        <div class="max-w-7xl mx-auto px-6">
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-                <div class="order-2 lg:order-1 relative h-[500px] lg:h-[600px] rounded-[3rem] overflow-hidden shadow-xl text-left">
-                    <img src="image3.webp" alt="Dettaglio Tecnologico" class="image-mask text-left" loading="lazy">
+                <div class="order-2 lg:order-1 relative h-[500px] lg:h-[600px] rounded-[3rem] overflow-hidden shadow-xl">
+                    <img src="image3.webp" alt="Dettaglio tecnico di rulli diamantati rigenerati" class="image-mask" loading="lazy">
                 </div>
-                <div class="order-1 lg:order-2 space-y-12 text-left">
-                    <h2 class="text-4xl font-extrabold text-brand-dark text-left">Tecnologia ed esperienza:<br><span class="text-brand-accent text-3xl text-left text-left">un equilibrio fondamentale</span></h2>
-                    <div class="text-brand-metal text-xl space-y-6 text-left">
-                        <p>I processi evolvono, ma vista e udito rappresentano ancora oggi strumenti fondamentali che giocano un ruolo determinante nella precisione finale.</p>
-                        <div class="bg-blue-50 p-8 rounded-3xl border-l-8 border-brand-accent text-brand-dark font-medium italic text-2xl shadow-inner text-left">
-                            La sensibilità tecnica rimane al centro del nostro impegno quotidiano.
+                <div class="order-1 lg:order-2 space-y-12">
+                    <section>
+                        <h2 class="text-4xl font-extrabold text-brand-dark">Tecnologia ed esperienza:<br><span class="text-brand-accent text-3xl">un equilibrio fondamentale</span></h2>
+                        <div class="text-brand-metal text-xl space-y-6">
+                            <p>I processi produttivi evolvono, ma chi conosce il diamante sa che lavorare un materiale così unico richiede sensibilità tecnica.</p>
+                            <div class="bg-blue-50 p-8 rounded-3xl border-l-8 border-brand-accent text-brand-dark font-medium italic text-2xl shadow-inner">
+                                Vista, udito e sensibilità tecnica sono strumenti che ancora oggi giocano un ruolo determinante nella precisione finale.
+                            </div>
                         </div>
-                    </div>
+                    </section>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Form Professionale e Contatti -->
-    <section id="richiesta-info" class="pt-24 pb-20 bg-slate-900 text-white border-t border-slate-800 scroll-mt-32">
-        <div class="max-w-7xl mx-auto px-6 sm:px-10">
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-20 items-start">
+    <!-- Form e Contatti -->
+    <section class="pt-24 pb-20 bg-slate-900 text-white border-t border-slate-800 text-center">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-20 items-start text-center">
                 <div class="space-y-12 text-center lg:text-left">
-                    <h2 class="text-5xl font-extrabold text-center lg:text-left text-center">Il nostro invito</h2>
-                    <p class="text-2xl text-slate-300 text-center lg:text-left text-center">Fermarsi un attimo può fare la differenza. <strong class="text-brand-accent underline decoration-white decoration-4 underline-offset-8 text-center lg:text-left text-center text-center">Riduci i costi e valorizza le tue risorse.</strong></p>
-                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-center">
-                        <div class="p-6 bg-slate-800/50 rounded-2xl border border-slate-700 text-center"><p class="text-xs font-bold text-brand-accent uppercase mb-2 text-center">Responsabile</p><p class="text-white font-bold text-xl text-center">Mauro Lucarelli</p></div>
-                        <div class="p-6 bg-slate-800/50 rounded-2xl border border-slate-700 text-center"><p class="text-xs font-bold text-brand-accent uppercase mb-2 text-center text-center">Telefono</p><a href="tel:+393515567533" class="text-white font-bold text-xl hover:text-brand-accent transition text-center text-center">+39 351 5567533</a></div>
-                        <div class="p-6 bg-slate-800/50 rounded-2xl border border-slate-700 text-center"><p class="text-xs font-bold text-brand-accent uppercase mb-2 text-center text-center">Email</p><a href="mailto:info@diamondretool.it" class="text-white font-bold text-lg hover:text-brand-accent transition text-center text-center text-break">info@diamondretool.it</a></div>
-                        <div class="p-6 bg-slate-800/50 rounded-2xl border border-slate-700 text-center"><p class="text-xs font-bold text-brand-accent uppercase mb-2 text-center text-center">PEC</p><a href="mailto:lucarelli.m@pec.it" class="text-white font-bold text-lg hover:text-brand-accent transition text-center text-center text-break">lucarelli.m@pec.it</a></div>
-                    </div>
+                    <h2 class="text-5xl font-extrabold mb-8 text-center lg:text-left">Il nostro invito</h2>
+                    <p class="text-2xl text-slate-300 text-center lg:text-left">La prossima volta che ti troverai davanti a un utensile logoro, <strong class="text-brand-accent underline decoration-white decoration-4 underline-offset-8">fermarsi un attimo può fare la differenza.</strong></p>
+                    <address class="grid grid-cols-1 sm:grid-cols-2 gap-4 not-italic text-center">
+                        <div class="p-6 bg-slate-800/50 rounded-2xl border border-slate-700"><p class="text-xs font-bold text-brand-accent uppercase mb-2">Responsabile</p><p class="text-white font-bold text-xl">Mauro Lucarelli</p></div>
+                        <div class="p-6 bg-slate-800/50 rounded-2xl border border-slate-700"><p class="text-xs font-bold text-brand-accent uppercase mb-2">Telefono</p><a href="tel:+393515567533" class="text-white font-bold text-xl hover:text-brand-accent transition">+39 351 5567533</a></div>
+                        <div class="p-6 bg-slate-800/50 rounded-2xl border border-slate-700"><p class="text-xs font-bold text-brand-accent uppercase mb-2">Email</p><a href="mailto:info@diamondretool.it" class="text-white font-bold text-lg hover:text-brand-accent transition">info@diamondretool.it</a></div>
+                        <div class="p-6 bg-slate-800/50 rounded-2xl border border-slate-700"><p class="text-xs font-bold text-brand-accent uppercase mb-2">PEC</p><a href="mailto:lucarelli.m@pec.it" class="text-white font-bold text-lg hover:text-brand-accent transition">lucarelli.m@pec.it</a></div>
+                    </address>
                 </div>
 
-                <!-- Form con Validazione Rigida -->
-                <div class="bg-white p-10 rounded-[3rem] shadow-2xl text-brand-dark text-left">
-                    <h3 class="text-3xl font-extrabold mb-8 text-center uppercase tracking-tight text-center">Richiedi informazioni</h3>
-                    <form id="contact-form" action="https://formspree.io/f/xnjoezag" method="POST" class="space-y-6 text-left">
-                        <input type="text" name="name" required class="w-full px-6 py-4 rounded-2xl bg-slate-50 border-2 border-slate-100 text-lg focus:border-brand-accent outline-none text-left" placeholder="Nome / Azienda">
-                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-left">
-                            <input type="email" name="email" required class="w-full px-6 py-4 rounded-2xl bg-slate-50 border-2 border-slate-100 text-lg focus:border-brand-accent outline-none text-left" placeholder="Email">
-                            <input type="tel" name="phone" required class="w-full px-6 py-4 rounded-2xl bg-slate-50 border-2 border-slate-100 text-lg focus:border-brand-accent outline-none text-left" placeholder="Cellulare">
+                <div id="modulo-contatto" class="bg-white p-10 rounded-[3rem] shadow-2xl text-brand-dark text-left scroll-mt-40">
+                    <h3 class="text-3xl font-extrabold mb-8 text-center uppercase tracking-tight">Richiedi informazioni</h3>
+                    <form id="contact-form" action="https://formspree.io/f/xnjoezag" method="POST" class="space-y-6">
+                        <input type="text" name="_gotcha" style="display:none">
+                        <input type="text" name="name" required class="w-full px-6 py-4 rounded-2xl bg-white border-2 border-slate-100 text-lg focus:border-brand-accent outline-none text-left" placeholder="Nome / Azienda">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <input type="email" name="email" required class="w-full px-6 py-4 rounded-2xl bg-white border-2 border-slate-100 text-lg focus:border-brand-accent outline-none text-left" placeholder="Email">
+                            <input type="tel" name="phone" required class="w-full px-6 py-4 rounded-2xl bg-white border-2 border-slate-100 text-lg focus:border-brand-accent outline-none text-left" placeholder="Cellulare">
                         </div>
-                        <textarea name="message" rows="4" required class="w-full px-6 py-4 rounded-2xl bg-slate-50 border-2 border-slate-100 text-lg focus:border-brand-accent outline-none text-left" placeholder="Messaggio"></textarea>
-                        
-                        <div class="flex items-start gap-3 py-2 text-left text-left">
+                        <textarea name="message" rows="4" required class="w-full px-6 py-4 rounded-2xl bg-white border-2 border-slate-100 text-lg focus:border-brand-accent outline-none text-left" placeholder="Descrivi l'utensile o il rullo da rigenerare..."></textarea>
+                        <div class="flex items-start gap-3 py-2 text-left">
                             <input type="checkbox" id="privacy" name="privacy_consent" required class="mt-1.5 h-5 w-5 rounded border-slate-300 text-brand-accent focus:ring-brand-accent">
                             <label for="privacy" class="text-sm text-slate-600 leading-tight">Accetto il trattamento dei dati personali secondo la <a href="privacy-it.html" target="_blank" class="text-brand-accent underline font-bold">Privacy Policy</a>.</label>
                         </div>
-                        
                         <button type="submit" id="submit-button" class="w-full bg-brand-dark text-white font-black py-5 rounded-2xl hover:bg-brand-accent transition shadow-xl text-xl uppercase tracking-widest text-center">Invia Richiesta</button>
-                        <div id="form-status" class="hidden mt-4 p-4 rounded-xl text-center font-bold text-center"></div>
+                        <div id="form-status" class="hidden mt-4 p-4 rounded-xl text-center font-bold"></div>
                     </form>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Footer: 4 Blocchi e Social -->
-    <footer class="bg-white py-20 text-slate-600 border-t-8 border-slate-100 text-center">
-        <div class="max-w-7xl mx-auto px-6 text-center text-center">
-            <img src="logo.png" alt="Logo Diamond ReTool" width="300" height="100" class="h-48 mx-auto object-contain mb-16 text-center">
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12 pt-16 border-t border-slate-100 text-center">
-                <div><p class="text-xs uppercase font-black text-slate-400 mb-2 text-center text-center">Sede Legale</p><p class="text-brand-accent font-bold text-lg text-center text-center">Strada San Mauro 234/16<br>Torino (TO)</p></div>
-                <div><p class="text-xs uppercase font-black text-slate-400 mb-2 text-center text-center">Contatti</p><p class="text-brand-accent font-bold text-lg text-center text-center">info@diamondretool.it<br>+39 351 5567533</p></div>
-                <div><p class="text-xs uppercase font-black text-slate-400 mb-2 text-center text-center">P. IVA</p><p class="text-brand-accent font-black text-xl tracking-widest text-center text-center">13437300018</p></div>
-                <div><p class="text-xs uppercase font-black text-slate-400 mb-2 text-center text-center">Legal</p><a href="privacy-it.html" class="text-brand-accent font-bold hover:underline text-center text-center">Privacy & Cookie</a></div>
+    <!-- Footer -->
+    <footer class="bg-white py-20 text-brand-dark border-t-8 border-slate-50 text-center">
+        <div class="max-w-7xl mx-auto px-6 text-center">
+            <img src="logo.png" alt="Diamond ReTool - Torino" class="h-40 mx-auto object-contain mb-16">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-12 pt-16 text-center">
+                <div><p class="text-xs uppercase font-black text-brand-dark mb-2">Sede Legale</p><p class="text-brand-accent font-bold text-lg">Strada San Mauro 234/16<br>Torino (TO)</p></div>
+                <div><p class="text-xs uppercase font-black text-brand-dark mb-2">Contatti</p><p class="text-brand-accent font-bold text-lg">info@diamondretool.it<br>+39 351 5567533</p></div>
+                <div><p class="text-xs uppercase font-black text-brand-dark mb-2">P. IVA</p><p class="text-brand-accent font-black text-xl tracking-widest">IT13437300018</p></div>
+                <div>
+                    <p class="text-xs uppercase font-black text-brand-dark mb-2">Legal</p>
+                    <a href="privacy-it.html" class="text-brand-accent font-bold hover:underline block">Privacy and Cookie Policy</a>
+                    <a href="mailto:lucarelli.m@pec.it" class="text-brand-accent font-bold hover:underline block mt-2">lucarelli.m@pec.it</a>
+                </div>
+                <div class="flex flex-col items-center">
+                    <p class="text-xs uppercase font-black text-brand-dark mb-2">Seguici</p>
+                    <a href="https://www.linkedin.com/company/diamondretool" target="_blank" class="text-brand-accent hover:scale-110 transition-transform flex items-center gap-2">
+                        <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                    </a>
+                </div>
             </div>
-            <div class="pt-16 flex justify-center text-center">
-                <a href="https://www.linkedin.com/company/diamondretool" target="_blank" class="flex items-center gap-2 text-brand-linkedin font-black hover:text-brand-dark transition-colors text-center text-center">
-                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
-                    <span>LinkedIn Profile</span>
-                </a>
-            </div>
-            <p class="pt-12 text-slate-300 text-xs font-bold uppercase tracking-[0.4em] text-center text-center">&copy; 2026 Diamond ReTool. Precisione e Durata.</p>
+            <p class="pt-16 text-brand-dark text-xs font-bold uppercase tracking-[0.4em]">&copy; 2026 Diamond ReTool. Precisione e Durata.</p>
         </div>
     </footer>
 
     <script>
-        // Cookie Banner Logic
         window.onload = function() {
             if (!localStorage.getItem('cookies-accepted')) {
                 setTimeout(() => { 
                     const banner = document.getElementById('cookie-banner');
-                    banner.style.opacity = '1';
-                    banner.style.pointerEvents = 'auto';
-                    banner.style.transform = 'translateY(0)';
+                    banner.style.opacity = '1'; banner.style.pointerEvents = 'auto'; banner.style.transform = 'translateY(0)';
                 }, 1000);
             }
         };
         function acceptCookies() {
             localStorage.setItem('cookies-accepted', 'true');
             const banner = document.getElementById('cookie-banner');
-            banner.style.opacity = '0';
-            banner.style.pointerEvents = 'none';
-            banner.style.transform = 'translateY(20px)';
+            banner.style.opacity = '0'; banner.style.pointerEvents = 'none'; banner.style.transform = 'translateY(20px)';
         }
 
-        // Form Submission Logic
         const form = document.getElementById("contact-form");
         const status = document.getElementById("form-status");
         const button = document.getElementById("submit-button");
@@ -245,7 +282,7 @@
             .then(response => {
                 status.classList.remove("hidden");
                 if (response.ok) {
-                    status.innerHTML = "SENT! La richiesta è stata inviata correttamente.";
+                    status.innerHTML = "MESSAGGIO INVIATO! Grazie per averci contattato.";
                     status.classList.add("bg-green-100", "text-green-800", "border-2", "border-green-200");
                     form.reset(); button.style.display = "none";
                 } else {
@@ -253,10 +290,7 @@
                     status.classList.add("bg-red-100", "text-red-800", "border-2", "border-red-200");
                     button.disabled = false; button.innerHTML = "RIPROVA INVIO";
                 }
-            }).catch(() => {
-                status.classList.remove("hidden"); status.innerHTML = "ERRORE DI RETE. Verifica la connessione.";
-                status.classList.add("bg-red-100", "text-red-800"); button.disabled = false;
-            });
+            }).catch(() => { status.classList.remove("hidden"); status.innerHTML = "ERRORE DI RETE."; button.disabled = false; });
         }
         form.addEventListener("submit", handleSubmit);
     </script>
